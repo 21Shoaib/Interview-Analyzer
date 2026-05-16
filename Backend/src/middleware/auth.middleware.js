@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken")
 const tokenBlacklistModel = require("../models/blacklist.model")
 
 require("dotenv").config()
-
+// this is just for change branch demo
 async function authUser(req, res, next){
     const token = req.cookies.token || req.headers.authorization?.split(' ')[1];
 
